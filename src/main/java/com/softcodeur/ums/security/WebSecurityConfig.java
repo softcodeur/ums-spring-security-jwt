@@ -24,8 +24,10 @@ import com.softcodeur.ums.service.facade.UserService;
 
 @Configuration
 @EnableWebSecurity
-//@EnableGlobalMethodSecurity(securedEnabled = true)
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+@EnableGlobalMethodSecurity(
+		  prePostEnabled = true, 
+		  securedEnabled = true, 
+		  jsr250Enabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
        @Resource(name = "userService")
 	   private UserDetailsService userDetailsService;

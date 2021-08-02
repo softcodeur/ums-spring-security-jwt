@@ -39,6 +39,8 @@ public class User  implements UserDetails {
 	    private boolean accountNonLocked;
 	    private String username;
 	    private String password;
+	    private String firstName;
+	    private String lasName;
 	    private boolean passwordChanged;
 
 	    
